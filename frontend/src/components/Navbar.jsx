@@ -4,6 +4,7 @@ import { FaOpencart, FaPlus } from "react-icons/fa";
 import { FaRegMoon } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import { MdOutlineWbSunny } from "react-icons/md";
+import { useProductStore } from '../store/product';
 
 function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
