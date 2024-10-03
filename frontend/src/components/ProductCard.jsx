@@ -33,6 +33,7 @@ function ProductCard({ product }) {
 
     const handleUpdate = async (pid, updatedProduct) => {
         const { success, message } = await updateProduct(pid, updatedProduct);
+        onClose();
         if (!success) {
             toast({
                 title: "Error",
@@ -43,7 +44,7 @@ function ProductCard({ product }) {
         } else {
             toast({
                 title: "Success",
-                description: message,
+                description: "Product updated successfully",
                 status: "success",
                 isClosable: true
             });
