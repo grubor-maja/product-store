@@ -1,4 +1,3 @@
-import './App.css'
 import { Box } from '@chakra-ui/react';
 import {Route,Routes} from "react-router-dom";
 import CreatePage from './pages/CreatePage.jsx';
